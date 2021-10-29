@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Galeria de fotos</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet"  href="../css/css.css" >
+    <link rel="stylesheet" href="../css/gallery-grid.css">
+
+
+</head>
+<body>
+    <div class="header">
+        <h1>MUJER EMPRENDEDORA</h1>
+        
+      </div>
+      
+      <div class="topnav">
+        <a href="index.html">INICIO</a>
+        <a href="link/conoce.html">CONOCE MAS</a>
+        <a href="galeria.html">GALERIA</a>
+        
+      </div>
+            
+          <script>
+            function textoFecha(fecha){
+    var numDiaSem = fecha.getDay(); 
+  
+    var diasSemana = new Array("Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado");
+    var diaLetras = diasSemana[fecha.getDay()];   
+     
+    var meses = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+      var mesLetras = meses[fecha.getMonth()]; 
+      var diaMes = (fecha.getDate());  
+      var anho = fecha.getFullYear();  
+      var devolver = "Hoy es " + diaLetras+ ", " + diaMes + " de " + mesLetras + " de " + anho ;
+    return devolver;
+  }
+  var fecha = new Date();  
+  document.write(textoFecha(fecha)); 
+          </script>
+
+<div class="container gallery-container">
+
+    <h1>Mujeres Emprendedoras</h1>
+
+    <p class="page-description text-center">
+        mujer
+    </p>
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" >
+                    <img src="../img/MUJER.jpg" alt="Park">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../img/MUJER.jpg">
+                    <img src="../img/MUJER.jpg" alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="../img/MUJER.jpg">
+                    <img src="../img/MUJER.jpg" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/coast.jpg">
+                    <img src="../img/violenci.png" alt="Coast">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/rails.jpg">
+                    <img src="../img/MUJER.jpg" alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/traffic.jpg">
+                    <img src="../img/MUJER.jpg" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/rocks.jpg">
+                    <img src="../img/MUJER.jpg" alt="Rocks">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/benches.jpg">
+                    <img src="../img/MUJER.jpg" alt="Benches">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="../images/sky.jpg">
+                    <img src="../img/MUJER.jpg" alt="Sky">
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+</html>
